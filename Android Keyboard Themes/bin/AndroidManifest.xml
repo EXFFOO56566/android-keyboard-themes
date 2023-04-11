@@ -1,0 +1,82 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" 
+        package="gt.keybord"
+        android:versionCode="1"
+        android:versionName="1.0" >>
+    
+       <uses-sdk
+        android:minSdkVersion="9" />
+         
+          <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+     	  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+          <uses-permission android:name="android.permission.INTERNET"/>
+          <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+          <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    
+    <application android:label="@string/ime_name"
+        android:icon="@drawable/ic_launcher"
+         android:theme="@style/AppTheme">
+        
+          <!--This meta-data tag is required to use Google Play Services.-->
+        <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+        
+         <activity
+            android:name="gt.keybord.KeyBoardActivity"
+            android:theme="@style/AppTheme"
+            android:label="@string/ime_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+         </activity>
+         
+         <activity android:name="gt.keybord.ThemesListActivity"
+              android:theme="@style/AppTheme"></activity>
+         
+           <activity android:name="gt.keybord.Crope" android:theme="@style/AppTheme"/>
+       	<activity android:name="gt.keybord.ThemesBackgroundActivity"></activity>
+       	<activity android:name="gt.keybord.CustomeThemesActivity"></activity>
+         
+        
+        
+      
+        
+          <service android:name="com.example.android.softkeyboard.SoftKeyboard"
+                android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method" />
+        </service>
+
+        <activity android:name="com.example.android.softkeyboard.ImePreferences" android:label="@string/settings_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+            
+        
+        
+        <!--Include the AdActivity configChanges and theme. -->
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        
+      <!-- StartApp activities integration -->
+      <activity android:name="com.startapp.android.publish.list3d.List3DActivity"
+          android:taskAffinity="gt.keybord.AppWall"
+          android:theme="@android:style/Theme" />
+
+		<activity android:name="com.startapp.android.publish.AppWallActivity"
+          android:theme="@android:style/Theme.Translucent"
+          android:configChanges="orientation|keyboardHidden|screenSize" />
+
+		<activity android:name="com.startapp.android.publish.FullScreenActivity"
+          android:theme="@android:style/Theme"
+          android:configChanges="orientation|keyboardHidden|screenSize" />
+        <!-- End of StartApp activities integration -->
+        
+
+    </application>
+</manifest>

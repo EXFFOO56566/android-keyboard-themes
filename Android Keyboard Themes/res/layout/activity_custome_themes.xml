@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="10"
+    android:background="@drawable/app_background" >
+    
+  <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"
+        android:text="Custom Keyboard"
+        android:background="@drawable/main_header"/>
+  
+   <LinearLayout 
+            android:id="@+id/l_lay_customethemes_background"
+            android:layout_width="match_parent"
+        	android:layout_height="0dp"
+        	android:layout_weight="2"
+        	android:gravity="center_vertical"
+        	android:paddingLeft="10dp"
+        	android:background="@drawable/enablekeyboard">
+            
+          	<ImageView 
+            	android:layout_width="60dp"
+            	android:layout_height="60dp"
+            	android:adjustViewBounds="true"
+            	android:layout_marginRight="10dp"
+            	android:focusable="false"
+            	android:src="@drawable/enablekeyboard_img"/>
+        
+        	<TextView 
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:gravity="center"
+            	android:textColor="@android:color/white"
+            	android:textSize="20sp"
+            	android:focusable="false"
+            	android:text="Background"/>
+         </LinearLayout>
+         
+     <LinearLayout 
+         	 android:id="@+id/l_lay_customethemes_keybackground"
+             android:layout_width="match_parent"
+        	 android:layout_height="0dp"
+        	 android:layout_weight="2"
+         	 android:gravity="center_vertical"
+         	 android:paddingLeft="10dp"
+         	 android:visibility="gone"
+        	 android:background="@drawable/setinputmethod">
+            
+          <ImageView 
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+            android:src="@drawable/setthemes_img"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:focusable="false"
+            android:text="Key background"/>
+         </LinearLayout>
+
+     
+      <LinearLayout 
+             android:id="@+id/l_lay_customethemes_gallerybackground"
+            android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@drawable/setthemes">
+            
+          <ImageView 
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+            android:src="@drawable/setthemicon"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:focusable="false"
+            android:text="Set Background Gallery"/>
+         </LinearLayout>
+         
+       <LinearLayout 
+              android:id="@+id/l_lay_customethemes_fontcolor"
+            android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        android:background="@drawable/setthemesbackground">
+            
+          <ImageView 
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+            android:src="@drawable/setthemesbackground_img"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:focusable="false"
+            android:text="Font Color"/>
+         </LinearLayout>
+         
+        <LinearLayout 
+             android:id="@+id/l_lay_customethemes_set"
+            android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="@drawable/setthemesbackground">
+            
+          <ImageView 
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="10dp"
+            android:focusable="false"
+            android:src="@drawable/setthemicon"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:focusable="false"
+            android:text="SetThemes"/>
+         </LinearLayout>
+
+      
+  
+</LinearLayout>

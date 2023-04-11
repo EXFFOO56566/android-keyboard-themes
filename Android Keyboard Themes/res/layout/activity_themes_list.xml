@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/app_background" >
+    
+  <TextView 
+      	android:id="@+id/txt_themeslist_name"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="KeyBoard Themes"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/main_header"/>
+
+      <GridView
+          android:id="@+id/listView_themes_list"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/txt_themeslist_name"
+          android:layout_above="@+id/startApp3DBanner"
+          android:layout_gravity="center_vertical"
+          android:layout_marginTop="10dp"
+          android:cacheColorHint="@android:color/transparent"
+          android:gravity="center"
+          android:numColumns="auto_fit" >
+
+      </GridView>
+   <!--    
+      <RelativeLayout 
+          android:id="@+id/rel_startad"
+          android:layout_width="fill_parent"
+		android:layout_height="70dp"
+		android:gravity="center"
+		android:layout_alignParentBottom="true"> -->
+      
+    <!--  <com.startapp.android.publish.banner.Banner 
+          android:id="@+id/startAppBanner"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"/> -->
+          
+          <com.startapp.android.publish.banner.banner3d.Banner3D 
+        android:id="@+id/startApp3DBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+          
+   <!--    
+      </RelativeLayout> -->
+      
+      </RelativeLayout>

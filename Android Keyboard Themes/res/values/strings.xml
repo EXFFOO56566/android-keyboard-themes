@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Title for Latin keyboard  -->
+    <string name="ime_name" translatable="false">Android Keyboard Themes</string>
+
+    <!-- Symbols that are commonly considered word separators in this language -->
+    <string name="word_separators" translatable="false">\u0020.,;:!?\n()[]*&amp;@{}/&lt;&gt;_+=|&quot;</string>
+    
+    <!-- Labels on soft keys -->
+    <string name="label_go_key" translatable="false">Go</string>
+    <string name="label_next_key" translatable="false">Next</string>
+    <string name="label_send_key" translatable="false">Send</string>
+
+    <!-- Labels for subtype -->
+    <string name="label_subtype_generic" translatable="false">%s</string>
+    <string name="label_subtype_en_GB" translatable="false">English (GB)</string>
+
+    <!-- Titles for ImePreference -->
+    <string name="settings_name" translatable="false">Android Keyboard Settings</string>
+    <string name="language_selection_title" translatable="false">Input languages</string>
+    <string name="select_language" translatable="false">Select input languages</string>
+    <string name="general_category" translatable="false">General</string>
+    
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_unit_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    
+
+    
+</resources>

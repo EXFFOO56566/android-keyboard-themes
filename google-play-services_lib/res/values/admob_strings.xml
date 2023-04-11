@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="store_picture_title" translatable="false">Save image</string>
+    <string name="store_picture_message" translatable="false">"Allow Ad to store image in Picture gallery?"</string>
+    <string name="accept" translatable="false">Accept</string>
+    <string name="decline" translatable="false">Decline</string>
+    <string name="create_calendar_title" translatable="false">Create calendar event</string>
+    <string name="create_calendar_message" translatable="false">Allow Ad to create a calendar event?</string>
+</resources>
